@@ -1,0 +1,59 @@
+:root{
+    --first-color: hsl(12, 32%, 22%);
+    --first-color-alt: hsl(12, 42%, 12%);
+    --first-color-light: hsl(12, 24%, 32%);
+    --second-color: hsl(39, 62%, 65%);
+    --title-color: hsl(12, 12%, 16%);
+    --text-color: hsl(12, 12%, 32%);
+    --text-color-light: hsl(12, 8%, 48%);
+}
+
+a{
+    text-decoration:none;
+}
+
+.nav__item span{
+    color: white;
+}
+
+.nav__link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.45rem;
+}
+
+.nav__link i{
+    color: transparent;
+    background-image: linear-gradient(180deg, hsl(39, 62%,75%) 0%, hsl(39,62%,45%) 100%);
+    -webkit-background-clip: text;
+    font-size: 1.5rem;
+}
+
+.nav__link span{
+    transition: .3s;
+    font-family: 'Pacifico', cursive;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.nav__link:hover span{
+    color: var(--second-color);
+}
+
+
+@media screen and (min-width: 760px) {
+    .nav__link i{
+        display: none;
+    }
+    .nav__link span{
+        font-size:1rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .nav__link span{
+        font-size:1.5rem;
+    }
+}
